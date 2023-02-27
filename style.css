@@ -1,0 +1,97 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background: lightgray;
+}
+body section {
+  border-radius: 15px;
+}
+body .calculadora {
+  width: 350px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: none;
+  box-shadow: 4px 4px 15px black;
+  background: transparent;
+  overflow: hidden;
+  border-radius: 15px;
+}
+body .calculadora form input {
+  box-sizing: border-box;
+  width: 100%;
+  height: 150px;
+  background-color: black;
+  padding: 20px 10px;
+  border: none;
+  color: white;
+  font-size: 32px;
+  text-align: right;
+  pointer-events: none;
+}
+body .calculadora .botoes {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  row-gap: 15px;
+  background-color: rgb(42, 42, 42);
+}
+body .calculadora .botoes .botoes__operadores, body .calculadora .botoes .botoes__num, body .calculadora .botoes .botoes__outros {
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body .calculadora .botoes .botoes__operadores {
+  margin-top: 10px;
+}
+body .calculadora .botoes .botoes__num {
+  flex-wrap: wrap;
+  row-gap: 10px;
+}
+body .calculadora .botoes .btn-opr, body .calculadora .botoes .btn-num, body .calculadora .botoes .btn-igual, body .calculadora .botoes .btn-clear {
+  width: 75px;
+  height: 75px;
+  font-size: 32px;
+  font-weight: bold;
+  overflow: hidden;
+  border: none;
+  border-radius: 10px;
+}
+body .calculadora .botoes .btn-opr {
+  background-color: orange;
+  color: white;
+}
+body .calculadora .botoes .btn-opr:active {
+  background-color: rgb(215, 140, 0);
+}
+body .calculadora .botoes .btn-num {
+  background-color: white;
+}
+body .calculadora .botoes .btn-num:active {
+  background-color: rgb(217, 217, 217);
+}
+body .calculadora .botoes .btn-clear {
+  background-color: red;
+}
+body .calculadora .botoes .btn-clear:active {
+  background-color: rgb(205, 0, 0);
+}
+body .calculadora .botoes .btn-igual {
+  background-color: green;
+  transition: 0.2s;
+}
+body .calculadora .botoes .btn-igual:active {
+  background-color: rgb(0, 104, 0);
+}/*# sourceMappingURL=style.css.map */
